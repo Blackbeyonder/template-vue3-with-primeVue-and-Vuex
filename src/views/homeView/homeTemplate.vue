@@ -13,7 +13,16 @@
       <Button label="Contrast" severity="contrast" raised />
     </div>
     <Button label="Click me" @click="handleClick" />
+
+    <hr />
+    <h1>example vuex</h1>
+    <div>
+      <input type="text" v-model="username" placeholder="Username" />
+      <input type="password" v-model="password" placeholder="Password" />
+      <button @click="login">Login</button>
+    </div>
   </div>
+
   <footerComponent></footerComponent>
 </template>
 
