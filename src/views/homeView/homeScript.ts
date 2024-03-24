@@ -1,9 +1,11 @@
 import { Options, Vue } from "vue-class-component";
 import headerComponent from "../../components/headerComponent/headerTemplate.vue";
+import footerComponent from "../../components/footerComponent/footerTemplate.vue";
 
 @Options({
   components: {
-    headerComponent
+    headerComponent,
+    footerComponent
   }
 })
 export default class homeComponent extends Vue {
