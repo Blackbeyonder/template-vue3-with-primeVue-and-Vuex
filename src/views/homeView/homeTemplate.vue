@@ -1,5 +1,5 @@
 <template>
-  <div class="test">template home3</div>
+  <h1 >template home</h1>
    <div class="card flex justify-content-center flex-wrap gap-3">
         <Button label="Primary" raised />
         <Button label="Secondary" severity="secondary" raised />

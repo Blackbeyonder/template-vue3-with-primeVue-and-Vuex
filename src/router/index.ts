@@ -1,7 +1,8 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
-// import HomeView from "../views/HomeView.vue";
-import home from "../views/homeView/homeTemplate.vue";
 
+import home from "../views/homeView/homeTemplate.vue"; //Import the components that you need
+
+//you can add new routes HERE
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
