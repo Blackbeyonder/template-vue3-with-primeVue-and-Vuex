@@ -1,0 +1,10 @@
+Folder structure
+
+-src/: Aquí es donde se encuentra todo el código fuente de tu aplicación.
+---assets/: Este directorio contiene recursos estáticos como imágenes, fuentes, archivos SVG, etc.
+---components/: Aquí se encuentran los componentes reutilizables de tu aplicación. Puedes organizarlos en subdirectorios según su función o propósito, como componentes comunes, componentes de página, componentes de formulario, etc.
+---pages/: En este directorio se encuentran los componentes de nivel superior que representan páginas completas de tu aplicación. Cada página puede contener múltiples componentes y manejar su propio estado.
+---services/: Este directorio contiene los servicios que interactúan con API externas o manejan la lógica de negocio de tu aplicación.
+---utils/: Aquí puedes colocar funciones de utilidad, constantes y otros elementos que se reutilizan en toda la aplicación.
+---App.js: Este es el componente principal de tu aplicación. Es donde se definen las rutas y la estructura general de la aplicación.
+---index.js: Este archivo es el punto de entrada de la aplicación, donde se renderiza el componente App en el DOM.
