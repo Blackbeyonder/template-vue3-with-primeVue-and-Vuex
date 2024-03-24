@@ -3,6 +3,7 @@
 </template>
 
 <style lang="scss">
+@import '~primeflex/primeflex.css';
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
