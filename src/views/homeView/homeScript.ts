@@ -1,8 +1,12 @@
 import { Options, Vue } from "vue-class-component";
+import headerComponent from "../../components/headerComponent/headerTemplate.vue";
 
 @Options({
+  components: {
+    headerComponent
+  }
 })
-export default class home extends Vue {
+export default class homeComponent extends Vue {
 //   msg!: string;
 
     handleClick() {

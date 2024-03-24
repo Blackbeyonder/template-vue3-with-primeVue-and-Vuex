@@ -1,4 +1,5 @@
 <template>
+  <headerComponent/>
   <h1 >template home</h1>
    <div class="card flex justify-content-center flex-wrap gap-3">
         <Button label="Primary" raised />
@@ -13,7 +14,7 @@
   <Button label="Click me" @click="handleClick" />
 </template>
 
-<script src="./home.ts" lang="ts">
+<script src="./homeScript.ts" lang="ts">
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
