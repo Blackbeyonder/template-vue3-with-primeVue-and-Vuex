@@ -2,13 +2,7 @@
 import { createApp } from 'vue';
 import App from './App.vue';
 import router from './router'; // Importa las rutas de Vue Router
-import PrimeVue from 'primevue/config';
-
-//theme
-import 'primevue/resources/themes/aura-light-green/theme.css'
-
-//icons
-import 'primeicons/primeicons.css';
+import PrimeModules from './prime-modules';
 
 
-createApp(App).use(router).use(PrimeVue).mount('#app');
+createApp(App).use(router).use(PrimeModules).mount('#app');

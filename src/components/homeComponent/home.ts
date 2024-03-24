@@ -7,7 +7,6 @@ import Button from 'primevue/button';
       Button
     }
 })
-
 export default class home extends Vue {
 //   msg!: string;
 
