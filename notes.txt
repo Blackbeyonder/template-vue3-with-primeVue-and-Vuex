@@ -8,3 +8,5 @@ Folder structure
 ---utils/: Aquí puedes colocar funciones de utilidad, constantes y otros elementos que se reutilizan en toda la aplicación.
 ---App.js: Este es el componente principal de tu aplicación. Es donde se definen las rutas y la estructura general de la aplicación.
 ---index.js: Este archivo es el punto de entrada de la aplicación, donde se renderiza el componente App en el DOM.
+---Store/: Para usar el vuex
+    -Module/: Para dividir los store del vuex dependiendo de las necesidades
