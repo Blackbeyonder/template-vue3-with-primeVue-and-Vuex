@@ -14,6 +14,7 @@ export default class homeComponent extends Vue {
 
   username= "";
   password = "";
+  objInStore={};
   private store = useStore();
   
 
@@ -30,13 +31,14 @@ export default class homeComponent extends Vue {
     handleClick() {
       // Método para manejar el evento de clic en el botón
       console.log('Button clicked!');
-      const currentUser = this.store.getters.currentUser;
-      console.log(currentUser);
       
     }
 
     async login() {
-      this.store.dispatch('login', { username: 'example', password: 'password' });
+      this.store.dispatch('user/login', { username: this.username, password: this.password });
+
+      const currentUser = this.store.getters['user/currentUser'];
+      this.objInStore = currentUser? currentUser : {};
     }
 
     
