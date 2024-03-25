@@ -18,16 +18,17 @@
    <hr />
     <h1>example vuex</h1>
     <div>
-      <input type="text" v-model="username" placeholder="Username" />
-      <input type="password" v-model="password" placeholder="Password" />
-      <Button label="Login and showStore" @click="login"></Button>
+      <InputText  type="text" v-model="username" placeholder="Username" />
+      <InputText  type="password" v-model="password" placeholder="Password" />
+      <Button label="Example Login and showStore" @click="login"></Button>
     </div>
     <!-- validate data -->
+    <!-- SHOW DATA IN STORE BEGIN-->
     <div v-if="objInStore.username">
       <h3>Data in store</h3>
     <p>username:{{objInStore.username}}</p>
     <p>username:{{objInStore.password}}</p>
-
+     <!-- SHOW DATA IN STORE END-->
     </div>
 
 </div>

@@ -2,7 +2,7 @@ import { Options, Vue } from "vue-class-component";
 import headerComponent from "../../components/headerComponent/headerTemplate.vue";
 import footerComponent from "../../components/footerComponent/footerTemplate.vue";
 import homeService from "@/services/homeService";
-import { useStore  } from 'vuex'; // Importa Store de Vuex
+import { useStore  } from 'vuex'; //! importante to use Store
 
 @Options({
   components: {
@@ -26,17 +26,18 @@ export default class homeComponent extends Vue {
       console.error('Error fetching data:', error);
     }
   }
-//   msg!: string;
 
     handleClick() {
-      // Método para manejar el evento de clic en el botón
+      // method to handler click
       console.log('Button clicked!');
       
     }
 
     async login() {
+      //Call action in module {module}/{action}
       this.store.dispatch('user/login', { username: this.username, password: this.password });
 
+      //To access in getters
       const currentUser = this.store.getters['user/currentUser'];
       this.objInStore = currentUser? currentUser : {};
     }
