@@ -42,6 +42,13 @@ export default class homeComponent extends Vue {
       this.objInStore = currentUser? currentUser : {};
     }
 
+    redirectView(){
+      // Redirect to other route
+      this.$router.push('/forms');
+      
+
+    }
+
     
   
 

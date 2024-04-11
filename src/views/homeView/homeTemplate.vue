@@ -12,6 +12,7 @@
       <Button label="Danger" severity="danger" raised />
       <Button label="Contrast" severity="contrast" raised />
     </div>
+    <Button  class="mr-1" label="Change view" @click="redirectView" />
     <Button label="Click me" @click="handleClick" />
 
 <div>

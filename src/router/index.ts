@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
 
 import home from "../views/homeView/homeTemplate.vue"; //Import the components that you need
+import forms from "../views/formsView/formsTemplate.vue";
 
 //you can add new routes HERE
 const routes: Array<RouteRecordRaw> = [
@@ -8,6 +9,11 @@ const routes: Array<RouteRecordRaw> = [
     path: "/",
     name: "home",
     component: home,
+  },
+  {
+    path: "/forms",
+    name: "forms",
+    component: forms,
   },
   {
     path: "/about",
