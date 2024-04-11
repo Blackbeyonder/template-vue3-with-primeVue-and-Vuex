@@ -27,7 +27,7 @@
     <div v-if="objInStore.username">
       <h3>Data in store</h3>
     <p>username:{{objInStore.username}}</p>
-    <p>username:{{objInStore.password}}</p>
+    <p>password:{{objInStore.password}}</p>
      <!-- SHOW DATA IN STORE END-->
     </div>
 
