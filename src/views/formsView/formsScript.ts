@@ -22,12 +22,15 @@ export default class formsComponent extends Vue {
     }
 
 
-
-    v$: any = useVuelidate(this.rules, this.state);
+    v$:any= useVuelidate(this.rules, this.state);
+  
+    
 
 
     async submitForm() {
-        const valid = await this.v$.$validate();
+        const valid =  await this.v$.$validate();
+        console.log(this.v$.firstName.$error);
+        
 
         if (valid) {
             console.log("Formulario válido");
